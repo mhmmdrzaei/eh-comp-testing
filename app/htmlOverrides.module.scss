@@ -1,0 +1,57 @@
+@import './variables.scss';
+
+
+.ulCheckmark {
+
+    li {
+        list-style: none;
+        background: url('https://cloud-assets.extrahop.com/icons/circle-check.svg') no-repeat left 3px;
+        padding-left: $med;
+    }
+}
+
+.ulCheckmarkCyan {
+
+    li {
+        list-style: none;
+        background: url('https://cloud-assets.extrahop.com/icons/circle-check-cyan.svg') no-repeat left 3px;
+        padding-left: $med;
+    }
+}
+
+.linksCyan {
+    a {
+        color: $cyan;
+        transition: color .1s ease-in-out;
+    }
+
+    a:hover {
+        color: $tangerine;
+
+    }
+}
+
+
+.ulArrowCyan {
+
+    li {
+        list-style: none;
+        background: url('https://cloud-assets.extrahop.com/icons/arrows/cyan-right.svg') no-repeat left 10px;
+        background-size: 22px;
+        padding-left: 50px;
+    }
+}
+
+.ulArrowTangerine {
+
+    li {
+        list-style: none;
+        background: url('https://cloud-assets.extrahop.com/icons/arrows/tangerine-right.svg') no-repeat left 2px;
+        padding-left: $med;
+    }
+}
+
+
+.borderLeftCyan {
+    border-left: 8px solid $cyan;
+}

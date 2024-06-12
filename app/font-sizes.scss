@@ -1,0 +1,41 @@
+// Default font sizes for each  heading and paragraph element
+
+h1, .fs-h1 {
+    font-size: $fs-h1;
+}
+
+h2, .fs-h2 {
+    font-size: $fs-h2;
+}
+
+h3, .fs-h3 {
+    font-size: $fs-h3;
+}
+
+h4, .fs-h4 {
+    font-size: $fs-h4;
+}
+
+h5, .fs-h5 {
+    font-size: $fs-h5;
+}
+
+p, .fs-p {
+    font-size: $fs-p;
+}
+
+.fs-ps {
+    font-size: $fs-ps;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-10 {
+    font-size: 10px;
+}

@@ -1,0 +1,47 @@
+{
+  "name": "www-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@portabletext/react": "^3.0.11",
+    "@sanity/icons": "^2.10.3",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.28.0",
+    "git-up": "^7.0.0",
+    "markdown-to-jsx": "^7.3.2",
+    "next": "^14.1.0",
+    "next-sanity": "^7.1.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "sanity": "^3.28.0",
+    "sanity-plugin-s3-files": "^1.0.0",
+    "sass": "^1.77.4",
+    "styled-components": "^6.1.8"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.2.22",
+    "@storybook/addon-essentials": "^8.0.0",
+    "@storybook/addon-interactions": "^8.0.0",
+    "@storybook/addon-links": "^8.0.0",
+    "@storybook/addon-onboarding": "^8.0.0",
+    "@storybook/blocks": "^8.0.0",
+    "@storybook/nextjs": "^8.0.0",
+    "@storybook/react": "^8.0.0",
+    "@storybook/test": "^8.0.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "eslint-plugin-storybook": "^0.8.0",
+    "postcss": "^8.4.38",
+    "storybook": "^8.0.0",
+    "tailwindcss": "^3.4.4"
+  }
+}

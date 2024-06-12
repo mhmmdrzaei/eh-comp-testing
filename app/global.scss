@@ -1,0 +1,43 @@
+// Global styles for the entire site
+// Some standard styles use Tailwind and are set in tailwind.config.js
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './variables';
+@import './colors';
+@import './font-sizes';
+
+html {
+    position: relative !important;
+    scroll-behavior: smooth;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    padding-left: $small;
+    padding-right: $small;
+    max-width: $width-xl;
+}
+
+.sticky-module {
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+    z-index: 5;
+}
+
+h1, h2, h3, h4, h5 {
+    white-space: pre-wrap;
+
+}
+
+#onetrust-consent-sdk #onetrust-banner-sdk {
+
+    @media screen and (max-width: $width-md) {
+        max-width: calc(100vw - 30px);
+        margin-left: 15px;
+    }
+    
+}

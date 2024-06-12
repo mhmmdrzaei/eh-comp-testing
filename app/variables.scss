@@ -1,0 +1,71 @@
+// This file contains all variables used site-wide, such as brand colors and sizes
+
+// ----------Colors----------
+
+$white: #FFFFFF; // rgb(255,255,255)
+$black: #000000; // rgb(0,0,0)
+$gray: #898A8D; // rgb(137,138,141)
+$pale-gray: #F7F7F7;
+
+$blue: #0663EC;
+$sapphire: #261F63; // rgb(38,31,99)
+$plum: #7F2854; // rgb(127,40,84)
+$gradient: linear-gradient(to right, $sapphire, $plum);
+$gradient-reverse: linear-gradient(to right, $plum, $sapphire);
+$vgradient: linear-gradient(to bottom, $sapphire, $plum);
+
+$magenta: #EC0889; // rgb(236/0/137)
+$magenta-dim: #BD006E;
+$magenta-dark: rgb(127,40,84);
+$magenta-gradient: linear-gradient(to right, $magenta, $magenta-dark);
+
+$cyan: #00AAEF; // rgb(0,170,239)
+$cyan-dim: #0077A8;
+$cyan-dark: #0069A7; //rgb(0,105,167)
+$cyan-darker: #005578;
+$cyan-gradient: linear-gradient(to right, $cyan, $cyan-dark);
+$cyan-light: #CCEEFC;
+
+$tangerine: #F05918; // rgb(240,89,24)
+$tangerine-dim: #E43D30;
+$tangerine-dark: #A83E11;
+$tangerine-gradient: linear-gradient(to right, $tangerine, $tangerine-dim);
+
+$lime: #DAED43; // rgb(218,227,67)
+$lime-dim: #B4BD00;
+$lime-dark: #999F2F;
+$lime-gradient: linear-gradient(to right, $lime, $lime-dim);
+$lime-gradient-flipped: linear-gradient(to right, $lime-dim, $lime);
+
+$sapphire-light: #3B3572;
+
+
+
+// ----------Sizes----------
+
+// Screen width breakpoints
+$width-sm: 640px;
+$width-md: 768px;
+$width-lg: 1024px;
+$width-xl: 1280px;
+$width-2xl: 1536px;
+
+// Spacing
+$small: 15px;
+$med: 30px;
+$large: 60px;
+$xl: 120px;
+
+// Font Sizes
+$fs-h1: 60px;
+$fs-h2: 42px;
+$fs-h3: 32px;
+$fs-h4: 24px;
+$fs-h5: 20px;
+$fs-p: 18px;
+$fs-ps: 16px; // "ps" short for "paragraph small"
+
+
+// Timing
+$tspeed: 0.15s;
+$tspeed2: 0.3s;
