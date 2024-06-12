@@ -9,8 +9,8 @@ export default async function Home() {
   return (
     <>
       {page.map((pageInfo) => {
-        const usecase = pageInfo.usecasesContainer;
-        const hql = pageInfo.headingQuoteLogo;
+        const usecase = pageInfo.usecase;
+        const hql = pageInfo.hql;
         const education = pageInfo.education
 
         return (

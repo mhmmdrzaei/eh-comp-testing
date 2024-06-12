@@ -9,8 +9,8 @@ import clientConfig from './config/client-config.js'
       groq`*[_type == "samplePage"]{
         _id,
         title,
-        usecasesContainer,
-          headingQuoteLogo {
+        usecase,
+          hql {
           hqlHeading,
           hqlQuoteContainer,
           hqlLogos[]{
