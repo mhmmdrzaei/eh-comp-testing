@@ -11,7 +11,6 @@
 }
 
 .ulCheckmarkCyan {
-
     li {
         list-style: none;
         background: url('https://cloud-assets.extrahop.com/icons/circle-check-cyan.svg') no-repeat left 3px;
@@ -54,4 +53,22 @@
 
 .borderLeftCyan {
     border-left: 8px solid $cyan;
+}
+
+.button_btnTangerine__8KI_w.button_btnBasic__vnYO3 {
+    background: linear-gradient(90deg, #f05918, #e43d30);
+    
+    &:hover {
+        // border: 2px solid #bf4713;
+    background-color: #bf4713;
+    }
+}
+.button_btn__FDfac {
+    display: inline-block;
+    border-radius: 84px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+
+  
 }

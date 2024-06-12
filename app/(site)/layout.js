@@ -1,5 +1,5 @@
 import { Poppins } from "next/font/google";
-import "../global.scss";
+import "../styles/global.scss";
 
 const inter = Poppins({ subsets: ["latin"], weight: ["400", '600'] });
 

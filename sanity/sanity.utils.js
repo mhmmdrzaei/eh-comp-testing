@@ -18,7 +18,18 @@ import clientConfig from './config/client-config.js'
             _key,
             caption,
           },
-          }
+          },
+        education {
+            edListpoints,
+            edImag {
+            "edImg": asset->url,
+              caption
+            },
+          edHeading,
+          edText,
+          ctaButton
+          
+        },
         
     }`,
 

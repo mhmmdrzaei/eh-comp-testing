@@ -97,6 +97,11 @@ export default {
 
 
         ]
+      },
+      {
+        name: 'education',
+        title: 'Education Box',
+        type: 'education'
       }
     
     
