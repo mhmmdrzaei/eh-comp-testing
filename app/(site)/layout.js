@@ -1,7 +1,7 @@
 import { Poppins } from "next/font/google";
 import "../styles/global.scss";
 
-const inter = Poppins({ subsets: ["latin"], weight: ["400", '600'] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["400", '600'] });
 
 export const metadata = {
   title: "ExtraHop Comps",
@@ -14,7 +14,7 @@ export default function RootLayout({
 ) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }

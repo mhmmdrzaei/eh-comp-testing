@@ -1,16 +1,15 @@
 // sanity.utils
 import { createClient, groq } from "next-sanity";
-import clientConfig from './config/client-config.js'
+import clientConfig from "./config/client-config.js";
 
-
-
-  export async function getInformation(){
-    return createClient(clientConfig).fetch(
-      groq`*[_type == "samplePage"]{
+export async function getInformation() {
+  return createClient(clientConfig).fetch(
+    groq`*[_type == "samplePage"]{
         _id,
         title,
         usecase,
-          hql {
+        usecasesContainer,
+        hql {
           hqlHeading,
           hqlQuoteContainer,
           hqlLogos[]{
@@ -18,7 +17,7 @@ import clientConfig from './config/client-config.js'
             _key,
             caption,
           },
-          },
+        },
         education {
             edListpoints,
             edImag {
@@ -30,8 +29,18 @@ import clientConfig from './config/client-config.js'
           ctaButton
           
         },
+        staffContainer {
+          staffHeadingContainer,
+          pplImag {
+            "pplImg": asset->url,
+              caption
+          },
+          staffTestiCont
+    
+      
+        },
+        opportunitiesBox
         
-    }`,
-
-    )
-  }
+    }`
+  );
+}

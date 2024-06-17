@@ -23,6 +23,16 @@ export default {
         name: 'education',
         title: 'Education Box',
         type: 'education'
+      },
+      {
+        name: 'opportunitiesBox',
+        title: 'Opportunities',
+        type:  'opportunitiesContainer'
+      },
+      {
+        name: 'staffContainer',
+        title: 'Staff Testimonials',
+        type: 'staffHighlight'
       }
     
     
