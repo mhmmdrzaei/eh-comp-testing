@@ -20,6 +20,7 @@ html {
     padding-left: $small;
     padding-right: $small;
     max-width: $width-xl;
+    width: calc(100% - $small);
 }
 
 .sticky-module {

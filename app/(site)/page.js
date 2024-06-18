@@ -20,9 +20,9 @@ export default async function Home() {
         return (
           <main className="page" key={uuidv4()}>
             <h2 >{pageInfo.title}</h2>
-            <UseCases usecase={usecase} />
-            <HeadingQuoteLogo hql={hql} />
-            <Education education={education}/>
+            <UseCases c={usecase} />
+            <HeadingQuoteLogo c={hql} />
+            <Education c={education}/>
             <Opportunities c={opportunity}/>
             <Staff c={staff}/>
            </main>

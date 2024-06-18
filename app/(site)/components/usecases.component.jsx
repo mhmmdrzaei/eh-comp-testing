@@ -1,9 +1,9 @@
-const UseCases=({usecase})=> {
+const UseCases=({c})=> {
     return (
         <section className="  bg-dark-blue">
         <section className="container m-auto useCasesContainer py-45 md:py-60 lg:py-90 w-11/12 lg:wfull">
-        <h4 className="text-white pb-40 font-semibold">{usecase.usecasesContHeading}</h4>
-        {usecase.usecases.map((usecase)=> {
+        <h4 className="text-white pb-40 font-semibold">{c.usecasesContHeading}</h4>
+        {c.usecases.map((usecase)=> {
           return (
             <div key={usecase._key} className="useCaseContainer grid lg:grid-cols-3 gap-24  grid-cols-1 items-start mb-40">
               <section className="usecaseTitle bg-white text-deep-blue p-40 rounded-md h-full	lg:col-span-1 col-span-2">

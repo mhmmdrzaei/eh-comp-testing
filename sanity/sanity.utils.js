@@ -17,25 +17,47 @@ export async function getInformation() {
             _key,
             caption,
           },
+          containerClass,
+          darkBg,
+          headingClass,
+          quoteCSS
         },
         education {
             edListpoints,
             edImag {
             "edImg": asset->url,
-              caption
+              caption,
             },
+          imgCss,
+          imgTop,
+          imgDark,
+          imgHeight,
+
           edHeading,
           edText,
-          ctaButton
+          ctaButton,
+          containerClass,
+          darkBg,
+          headingClass,
+          subHeadingClass
           
         },
         staffContainer {
+        containerClass,
+        darkBg,
           staffHeadingContainer,
+          headingClass,
+          subHeadingClass,
           pplImag {
             "pplImg": asset->url,
-              caption
+              caption,
           },
-          staffTestiCont
+          imgCss,
+          imgTop,
+          imgDark,
+          imgHeight,
+          staffTestiCont,
+          testiCSS,
     
       
         },
