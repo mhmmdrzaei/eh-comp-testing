@@ -4,6 +4,9 @@ import opportunities from './opportunities'
 import ourPeople from './our-people'
 import samplePage from './sample-page'
 import usecase from './usecase'
+import demos from './demos'
+import contactPage from './contact-page'
+import demoInner from './demo-inner'
 
 export const schemaTypes = [
     samplePage,
@@ -11,6 +14,9 @@ export const schemaTypes = [
     usecase,
     headingQuoteLogo,
     opportunities,
-    ourPeople
+    ourPeople,
+    demos,
+    demoInner,
+    contactPage
     
 ]

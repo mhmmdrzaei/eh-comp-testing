@@ -66,3 +66,14 @@ export async function getInformation() {
     }`
   );
 }
+export async function getDemos() {
+  return createClient(clientConfig).fetch(
+    groq`*[_type == "contactPage"]{
+        _id,
+        title,
+        demoOptions
+
+    }`
+  );
+}
+

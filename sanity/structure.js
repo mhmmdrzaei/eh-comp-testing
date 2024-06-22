@@ -8,7 +8,7 @@ export const myStructure = (S) => {
       ...S.documentTypeListItems().reverse().filter((listItem) => {
         const id = listItem.getId();
         if (!id) return true; 
-        return !['samplePage'].includes(id);
+        return !['samplePage', 'contactPage'].includes(id);
       }),
       // info
       S.listItem()
@@ -19,5 +19,14 @@ export const myStructure = (S) => {
             .schemaType('samplePage')
             .documentId('samplePage')
         ),
+      //contact
+      S.listItem()
+      .title('ContactPage')
+      .icon(CaseIcon)
+      .child(
+        S.document()
+          .schemaType('contactPage')
+          .documentId('contactPage')
+      ),
     ]);
 };

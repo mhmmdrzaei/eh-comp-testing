@@ -1,0 +1,147 @@
+// Styles for forms used across site, beginning with demo form
+
+@import '../../../styles/variables.scss';
+@import '../../../styles/colors';
+
+.form {
+
+    .formField {
+        padding-bottom: 20px;
+        position: relative;
+
+        .fieldTitle {
+            color: $gray;
+            font-size: 14px;
+            padding-bottom: 5px;
+        }
+
+        .optional {
+            position: absolute;
+            right: 0;
+            top: 3px;
+            color: $gray;
+            font-size: 11px;
+        }
+
+        input, select, textarea {
+            border: 1px solid $gray;
+            border-radius: 3px;
+            padding: 8px 12px;
+            width: 100%;
+            font-size: 16px;
+
+            &.invalid {
+                border: 3px solid $magenta;
+                padding: 6px 10px;
+            }
+        }
+
+        &.formFieldFlex {
+
+            @media screen and (min-width: $width-lg) {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .optional {
+                position: static;
+            }
+
+            input, select, textarea {
+                max-width: 400px;
+            }
+
+            .fieldTitle {
+                color: $black;
+                margin-top: 8px;
+            }
+        }
+    }
+
+    .formDropdownSelect {
+
+        select {
+            -webkit-appearance: none; /* Safari and Chrome */
+            -moz-appearance: none; /* Firefox */
+            appearance: none;
+        }
+
+        img {
+            position: absolute;
+            top: 43px;
+            right: 15px;
+            transform: rotate(180deg);
+        }
+
+        &.formFieldFlex {
+            img {
+                top: 18px;
+            }
+        }
+    }
+
+    .formCheckbox {
+
+        label {
+            cursor: pointer;
+        }
+
+        label > div:first-of-type {
+            width: 30px;
+
+            input {
+                width: 0;
+                height: 0;
+            }
+    
+            .checkContainer {
+                position: absolute;
+                top: 5px;
+                left: 0;
+                width: 25px;
+                border: 1px solid $cyan;
+                border-radius: 3px;
+
+                img {
+                    width: 25px;
+                    transition: opacity .1s;
+                }
+
+                &.unchecked {
+
+                    img {
+                        opacity: 0;
+                    }
+                    
+                }
+            }
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    .formStepContainer {
+        position: relative;
+
+        .formStep {
+            transition: opacity $tspeed2;
+            position: relative;
+            z-index: 2;
+    
+            &.hiddenStep {
+                opacity: 0;
+                z-index: 1;
+                pointer-events: none;
+            }
+    
+            &.formStep1 {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+            }
+        }
+    }
+}

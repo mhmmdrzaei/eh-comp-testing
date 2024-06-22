@@ -1,0 +1,22 @@
+// Styles for forms used across site, beginning with demo form
+
+@import "../../../styles/variables.scss";
+@import "../../../styles/colors";
+
+.demoContainer {
+  background: linear-gradient(rgba(38, 31, 99, 0.7), rgba(38, 31, 99, 0.7)),
+    url(../../assets/ebc51a102d20ba9afb85888fb421b359.jpeg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size:
+    cover,
+    auto 1700px;
+}
+.demoTabTitle {
+  span {
+    font-size: 84px;
+    color: black;
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke: 2px #ffffff;
+  }
+}
