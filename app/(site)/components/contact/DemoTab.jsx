@@ -18,7 +18,7 @@ const DemoTab = ({ c, style }) => {
             <li class="text-h5 pb-20" key={uuidv4()}>
               {point}
             </li>
-          ))}
+          ))} 
         </ul>
       </section>
     </div>
