@@ -143,7 +143,8 @@ const GuidedDemo = ({}) => {
                 <select id="guided-country" className="form-control" name="country" required value={formData.country} onChange={handleChange}>
                     <CountryOptions />
                 </select>
-                <img src="https://cloud-assets.extrahop.com/icons/arrows/triangle-cyan.svg" className="h-[8px]" />
+                <div className={`${styles.arrowDown} h-[8px]`}></div>
+                {/* <img src="https://cloud-assets.extrahop.com/icons/arrows/triangle-magenta.svg" className="h-[8px]" /> */}
             </div>
 
             <div className={styles.formField}>
@@ -165,7 +166,7 @@ const GuidedDemo = ({}) => {
                     <div className="relative">
                         <input type="checkbox" id="guided-explicitOptIn1" name="explicitOptIn1" checked={formData.explicitOptIn1} onChange={handleCheckbox} className="mt-5"/>
                         <div className={`${styles.checkContainer} ${formData.explicitOptIn1 === false && styles.unchecked}`}>
-                            <img src="https://cloud-assets.extrahop.com/icons/checkbox.svg" alt="cyan checkmark"/>
+                            {/* <img src="https://cloud-assets.extrahop.com/icons/checkbox.svg" alt="magenta checkmark"/> */}
                         </div>
                     </div>
                     <div className="pl-25">
@@ -179,7 +180,7 @@ const GuidedDemo = ({}) => {
 
             <div className="pb-30"></div>
 
-            <div className={`${styles.formSubmitButton} ${buttonStyles.btn} ${buttonStyles.btnBasic} ${buttonStyles.btnCyan}`}>
+            <div className={`${styles.formSubmitButton} ${buttonStyles.btn} ${buttonStyles.btnBasic} ${buttonStyles.btnTangerine}`}>
                 <input data-ga-submit type="submit" data-track-form-cta sales-demo-submit_btn="true" value="Schedule my demo" className="font-semibold py-10 px-30 text-h5" />
                 <span className={buttonStyles.btnGradient}></span>
                 <span></span>

@@ -3,14 +3,14 @@ import styles from './demo-container.module.scss';
 const DemoTab = ({ c, style }) => {
     
   return (
-    <div className="text-white">
+    <div className="text-white mr-60">
       <section className={styles.demoTabTitle}>
         <span className="font-bold leading-tight">{c.heading}</span>
         <h2 className={`${style? style :''} font-bold leading-tight mb-40`}>{c.demoTitle}</h2>
         <h4 >{c.headingDesc}</h4>
       </section>
       <section className="demo-points">
-        <h4 class="font-semibold text-cyan pt-25 pb-25">
+        <h4 class="font-semibold text-cyan pt-40 pb-32">
           {c.demoPointers.demoPointersHeading}
         </h4>
         <ul class="ulCheckmarkCyan mb-24 text-ps">

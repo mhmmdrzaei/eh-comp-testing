@@ -65,12 +65,22 @@
             -moz-appearance: none; /* Firefox */
             appearance: none;
         }
+        select::after {
+            content: 'testing'
+        }
 
         img {
             position: absolute;
             top: 43px;
             right: 15px;
             transform: rotate(180deg);
+        }
+        .arrowDown {
+            position: absolute;
+            top: 43px;
+            right: 15px;
+            width: 10px;
+            background: url(../../assets/arrowdown.svg);
         }
 
         &.formFieldFlex {
@@ -99,19 +109,22 @@
                 top: 5px;
                 left: 0;
                 width: 25px;
-                border: 1px solid $cyan;
+                height: 25px;
+                border: 1px solid $tangerine;
                 border-radius: 3px;
+                background: url(../../assets/checkbox.svg);
 
-                img {
-                    width: 25px;
-                    transition: opacity .1s;
-                }
+                // img {
+                //     width: 25px;
+                //     transition: opacity .1s;
+                // }
 
                 &.unchecked {
+                    background: none;
 
-                    img {
-                        opacity: 0;
-                    }
+                    // img {
+                    //     opacity: 0;
+                    // }
                     
                 }
             }

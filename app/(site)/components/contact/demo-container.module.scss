@@ -9,8 +9,7 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size:
-    cover,
-    auto 1700px;
+    cover
 }
 .demoTabTitle {
   span {
@@ -19,4 +18,13 @@
     -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
     -webkit-text-stroke: 2px #ffffff;
   }
+}
+.demoFormTabSelector {
+  
+
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+.active {
+  width: 100%;
+  border-bottom: 2px solid $cyan;
 }
